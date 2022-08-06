@@ -1,0 +1,120 @@
+
+<html>
+
+    <head>
+    <title>Registration Form</title>
+    <style>
+       .ad{
+        background-color: pink;
+       }
+       .abc1{
+        float: left;
+        height: 100px;
+       }  
+       .abc{
+        float: right;
+        height: 100px;
+       } 
+    </style>
+    </head>
+    <body class="ad">
+        <div> 
+            <img class="abc" src="../Images/download.png" width="10%" height="10%"/>
+            <img class="abc1" src="../Images/aktu.png" width="10%" height="10%"/>
+        </div>
+    <h2 align="center">Registration Form</h2>
+     <table align="center" cellpadding="10">
+         <tr>
+             <td >First Name*:-</td>
+             <td><input type:"text" placeholder="First Name"  id="name"/></td>
+
+         </tr>
+         <tr>
+             <td>Last Name*:-</td>
+             <td><input type:"text" placeholder="Last Name"  id="name1" /></td>
+         </tr>
+         <tr>
+             <td>Father's Name*:-</td>
+             <td><input type="text" placeholder="Father's Name"  id="fname" /></td>
+         </tr>
+         <tr>
+            <td>Mother's Name*:-</td>
+            <td><input type="text" placeholder="Mother's Name" id="mname" /></td>
+        </tr>
+        <tr>
+            <td>Email-id*:-</td>
+            <td><input type="text" placeholder="Email-id"  id="email1" /></td>
+        </tr>
+        <tr>
+            <td>Password*:-</td>
+            <td><input type="password" placeholder="password"  id="password1"/></td>
+        </tr>
+        <tr >
+            <td> Gender*:-</td>
+            <td><input type="radio" name="aditya"/>male
+               <input type="radio" name="aditya"/>female
+               <input type="radio" name="aditya"/>Transgender
+            </td>
+        </tr>
+        <tr>
+            <td>D.O.B*:-</td>
+            <td><input type="date" placeholder="Date of Birth"/></td>
+        </tr>
+        <tr>
+            <td>Category:-</td>
+            <td>
+            <select>
+             <option value="">Select</option>
+             <option value="">General</option>
+             <option value="">OBC</option>
+             <option value="">SC/ST</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <td>Cource:-</td>
+            <td>
+                <input type="checkbox" />10th
+                <input type="checkbox" />12th
+                <input type="checkbox" />BCom
+                <input type="checkbox" />MCom
+                <input type="checkbox" />B.tech
+            </td>
+        </tr>
+        <tr>
+            <td>Image:-</td>
+            <td><input type="file"/></td>
+        </tr>
+        <tr>
+            <td>
+                About us*:-
+            </td>
+            <td><textarea placeholder="About us" id="id1"></textarea></td>
+        </tr>
+       <tr align="right">
+        <td ><input type="submit" value="Submit" onclick="onclick1()"></td>
+       </tr>
+        
+     </table>
+     <script>
+     function onclick1()
+            {
+                var email2= document.getElementById("email1").value;
+                var password2=document.getElementById("password1").value;
+                var name2= document.getElementById("name").value;
+                var name3= document.getElementById("name1").value;
+                var fname1= document.getElementById("fname").value;
+                var fname2= document.getElementById("mname").value;
+                var id2= document.getElementById("id1").value;
+                if(email2==""|| password2 =="" || name2=="" || name3=="" || fname1=="" || fname2==""|| id2=="" )
+                {
+                    alert("plaese fill the required value");
+                }
+                else{
+                    alert("form submitted successfully...!");
+                }
+                
+            }
+        </script>
+    </body>
+</html>
